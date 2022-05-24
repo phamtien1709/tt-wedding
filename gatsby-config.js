@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'We are getting married - Wedding - Tien Pham - Ha Thanh',
+    title: "We're getting married - Wedding - TPHT",
     author: 'Tien Pham',
-    description: 'Website wedding of Tien-Thanh'
+    description: 'Wedding sites of Tien-Thanh'
   },
   plugins: [
     {
