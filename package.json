@@ -1,9 +1,9 @@
 {
   "name": "tristan-wedding",
-  "description": "Tristan Yang's wedding site",
+  "description": "TT's wedding site",
   "version": "1.0.0",
   "author": "Tristan",
-  "homepage": "https://wedding.yangerxiao.com",
+  "homepage": "https://wedding.bepcothanh.com",
   "dependencies": {
     "confetti-react": "^2.5.0",
     "gatsby": "^3.14.0",

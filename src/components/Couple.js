@@ -79,22 +79,22 @@ export default function Couple({ popupDan }) {
     }
     return (
         <StyledWrapper>
-            <Title title="新郎 · 新娘" />
+            <Title title="Cô dâu · Chú rể" />
             <div className="cp">
                 <div className="profile">
                     <div className="pic boy" onDoubleClick={handleDC}>
                         <img src={FrameImage} alt="man" />
                     </div>
-                    <div className="name">杨国春🤵🏻</div>
-                    <div className="intro">我有三样东西不可或缺：水，空气，以及{tips[pos].m}那个女人</div>
+                    <div className="name">Pham Tien🤵🏻</div>
+                    <div className="intro">Có 3 thứ tôi cần: nước, không khí, và{tips[pos].m}người phụ nữ đó</div>
 
                 </div>
                 <div className="profile">
                     <div className="pic girl" onDoubleClick={handleDC}>
                         <img src={FrameImage} alt="man" />
                     </div>
-                    <div className="name">朱聪👰🏻</div>
-                    <div className="intro">我有三样东西不可或缺：水，空气，以及{tips[pos].w}那个男人</div>
+                    <div className="name">Ha Thanh👰🏻</div>
+                    <div className="intro">Có 3 thứ tôi cần: nước, không khí, và{tips[pos].w}người đàn ông đó</div>
 
                 </div>
             </div>
