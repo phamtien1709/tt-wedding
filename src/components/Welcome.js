@@ -107,7 +107,7 @@ const StyledWrapper = styled.section`
       }
       .txt{
         white-space: nowrap;
-        font-family: "SP-F";
+        font-family: 'Dancing Script', cursive;
         position: absolute;
         top:50%;
         left:50%;

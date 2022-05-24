@@ -13,12 +13,10 @@ import Footer from '../components/Footer'
 import Confetti from '../components/Confetti'
 
 export default function Index({ data }) {
-  const [ready, setReady] = useState(false);
+  const [ready, setReady] = useState(false)
   const [dan, setDan] = useState(null)
-  const {
-    title: siteTitle,
-    description: siteDescription
-  } = data.site.siteMetadata
+  const { title: siteTitle, description: siteDescription } =
+    data.site.siteMetadata
   useEffect(() => {
     const inter = setTimeout(() => {
       setReady(true)
@@ -26,7 +24,7 @@ export default function Index({ data }) {
     return () => {
       clearTimeout(inter)
     }
-  }, []);
+  }, [])
   const closeDan = () => {
     setDan(null)
   }
@@ -35,6 +33,12 @@ export default function Index({ data }) {
       <Helmet>
         <title>{siteTitle}</title>
         <meta name="description" content={siteDescription} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
       </Helmet>
       <CommonStyle />
       <Reset />

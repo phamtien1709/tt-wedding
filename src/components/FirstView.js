@@ -50,7 +50,7 @@ const StyledWrapper = styled.section`
     width: 3.8rem;
     height: 3.8rem;
     .title {
-      font-family: 'SP-F';
+      font-family: 'Dancing Script', cursive;
       display: flex;
       font-size: 0.48rem;
       padding: 0.2rem 0;
@@ -90,11 +90,8 @@ const StyledWrapper = styled.section`
   }
 `
 const now = new Date().getTime()
-const deadline = new Date(2022, 7, 9, 0, 0, 0).getTime()
+const deadline = new Date(1657299600000).getTime()
 const initCountNum = deadline - now
-console.log('====================================')
-console.log(initCountNum)
-console.log('====================================')
 
 export default function FirstView() {
   const [direction, setDirection] = useState(
@@ -174,7 +171,7 @@ export default function FirstView() {
               </span>
             </Timer>
           </div>
-          <div className="time">2022.07.09</div>
+          <div className="time">09 Tháng 07 Năm 2022</div>
         </div>
       </div>
       <HiChevronDoubleDown className="down" />

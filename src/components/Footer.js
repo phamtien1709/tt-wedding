@@ -25,17 +25,12 @@ const Wrapper = styled.footer`
 const Footer = (props) => (
   <Wrapper style={props.timeout ? { display: 'none' } : {}}>
     <p className="copyright">
-      created by <a href="//yangerxiao.com" target="_blank">tristan</a> with ❤️ &nbsp;&copy; 2020 - {new Date().getFullYear()}
+      created by <a href="https://fb.com/kisskiss1709" target="_blank">Tien Pham</a> with ❤️ &nbsp;&copy; 2022 - {new Date().getFullYear()}
     </p>
     <p className="powerby">
       Powerd by
       <a target="_blank" href="https://www.gatsbyjs.org/">
         Gatsby.js
-      </a>
-    </p>
-    <p className="icp">
-      <a target="_blank" href="http://www.beian.miit.gov.cn/">
-        京ICP备16015459号-1
       </a>
     </p>
   </Wrapper>

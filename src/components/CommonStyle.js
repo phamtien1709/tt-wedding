@@ -34,8 +34,8 @@ const CommonStyle = createGlobalStyle`
     }
 }
 @font-face{
-    font-family: "Smooch";
-    src:url(https://fonts.googleapis.com/css2?family=Smooch&display=swap);
+    font-family: 'Dancing Script', cursive;
+    src:url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap);
     font-style: normal;
     font-weight: normal;
 }

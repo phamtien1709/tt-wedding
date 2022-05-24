@@ -44,7 +44,7 @@ const StyledWrapper = styled.section`
               }
           }
           .name{
-            font-family: 'SP-F';
+            font-family: 'Dancing Script', cursive;
               font-size: .4rem;
               padding:.2rem 0;
               margin: .2rem 0;
@@ -85,16 +85,16 @@ export default function Couple({ popupDan }) {
                     <div className="pic boy" onDoubleClick={handleDC}>
                         <img src={FrameImage} alt="man" />
                     </div>
-                    <div className="name">Pham Tien🤵🏻</div>
-                    <div className="intro">Có 3 thứ tôi cần: nước, không khí, và{tips[pos].m}người phụ nữ đó</div>
+                    <div className="name">Tiến Phạm🤵🏻</div>
+                    <div className="intro">Có 3 thứ tôi cần: nước, không khí, và {tips[pos].m} người phụ nữ đó</div>
 
                 </div>
                 <div className="profile">
                     <div className="pic girl" onDoubleClick={handleDC}>
                         <img src={FrameImage} alt="man" />
                     </div>
-                    <div className="name">Ha Thanh👰🏻</div>
-                    <div className="intro">Có 3 thứ tôi cần: nước, không khí, và{tips[pos].w}người đàn ông đó</div>
+                    <div className="name">Hà Thanh👰🏻</div>
+                    <div className="intro">Có 3 thứ tôi cần: nước, không khí, và {tips[pos].w} người đàn ông đó</div>
 
                 </div>
             </div>
