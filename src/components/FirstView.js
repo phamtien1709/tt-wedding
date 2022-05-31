@@ -20,7 +20,7 @@ const StyledWrapper = styled.section`
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url('https://www.brides.com/thmb/DeHRIBvUOg3IwBQuZW6cmAu0aNE=/2500x2500/filters:fill(auto,1)/sq-13f788e2730d4979b2baac6ca7c1cd6c.jpg');
+  background-image: url('https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/w12.png?x-oss-process=image/resize,w_2500');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
