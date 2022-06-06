@@ -20,7 +20,7 @@ const StyledWrapper = styled.section`
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url('https://i.imgur.com/THaj78G.jpeg');
+  background-image: url('https://i.imgur.com/THaj78Gh.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
