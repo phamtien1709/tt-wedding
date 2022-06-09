@@ -128,7 +128,7 @@ export default function Welcome() {
   const [stop, setStop] = useState(initCountNum < 0)
   return (
     <StyledWrapper>
-      <Title title="欢迎参加" />
+      <Title title="Rất mong sự hiện diện của bạn" />
       <div className="wrapper">
         <div className="countdown">
           <Timer
@@ -145,19 +145,19 @@ export default function Welcome() {
           >
             <div className="box">
               <span className="num day"><Timer.Days /></span>
-              <span className="txt">天</span>
+              <span className="txt">ngày</span>
             </div>
             <div className="box">
               <span className="num hour"><Timer.Hours /></span>
-              <span className="txt">时</span>
+              <span className="txt">giờ</span>
             </div>
             <div className="box">
               <span className="num min"><Timer.Minutes /></span>
-              <span className="txt">分</span>
+              <span className="txt">phút</span>
             </div>
             <div className="box">
               <span className="num second"><Timer.Seconds /></span>
-              <span className="txt">秒</span>
+              <span className="txt">giây</span>
             </div>
           </Timer>
         </div>
@@ -166,9 +166,9 @@ export default function Welcome() {
             <Confetti gravity={0.2} numberOfPieces={150} />
           </div>
           <div className="txt">
-            我们结婚啦
+            Chúng mình sắp cưới!
           </div>
-        </div> : <a href="https://www.wjx.top/vj/QbEknqo.aspx" target="_blank" className="signup">报名</a>}
+        </div> : <a href="https://www.wjx.top/vj/QbEknqo.aspx" target="_blank" className="signup">Đăng ký</a>}
 
       </div>
     </StyledWrapper>

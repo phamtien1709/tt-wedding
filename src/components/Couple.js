@@ -59,12 +59,12 @@ const StyledWrapper = styled.section`
 `;
 const tips = {
     h: {
-        m: '右面',
-        w: '左面'
+        m: 'bên phải',
+        w: 'bên trái'
     },
     v: {
-        m: '下面',
-        w: '上面'
+        m: 'bên dưới',
+        w: 'bên trên'
     }
 }
 export default function Couple({ popupDan }) {

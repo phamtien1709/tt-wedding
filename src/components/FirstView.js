@@ -20,7 +20,7 @@ const StyledWrapper = styled.section`
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url('https://lh5.googleusercontent.com/DX5_0Vm9hIevhwkSrKnp_y6MtmmonG1VphywBiezk36MPpAa_JONF6gKUeuWqviLxMH4_0UY_QblnQwVEkmc=w1500-rw');
+  background-image: url('https://i.imgur.com/BSq7edmh.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

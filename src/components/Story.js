@@ -148,7 +148,7 @@ function createMarkup(html) {
 export default function Couple() {
     return (
         <StyledWrapper>
-            <Title title="我们的故事" />
+            <Title title="Câu chuyện của chúng mình" />
             <div className="tl">
                 <ul className="items">
                     {items.map(({ title, datetime, desc, picture }, idx) =>
