@@ -31,12 +31,12 @@ const StyledWrapper = styled.section`
               background-position: center;
               overflow: hidden;
               &.boy{
-                background-image: url('https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/w4.png?x-oss-process=image/resize,w_400'),url(${FrameImage});
+                background-image: url('https://i.imgur.com/v3pXIHl.png'),url(${FrameImage});
                 background-size:75%,100%;
                 background-position-y: 5px;
               }
               &.girl{
-                background-image: url('https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/w1.png?x-oss-process=image/resize,w_400'),url(${FrameImage});
+                background-image: url('https://i.imgur.com/wI4jiKp.png'),url(${FrameImage});
               }
               img{
                   width: 100%;
@@ -52,6 +52,7 @@ const StyledWrapper = styled.section`
           .intro{
             font-size: .12rem;
             white-space: nowrap;
+						font-family: Open Sans;
           }
       }
 
@@ -79,7 +80,7 @@ export default function Couple({ popupDan }) {
     }
     return (
         <StyledWrapper>
-            <Title title="Cô dâu · Chú rể" />
+            <Title title="Chú rể · Cô dâu" />
             <div className="cp">
                 <div className="profile">
                     <div className="pic boy" onDoubleClick={handleDC}>

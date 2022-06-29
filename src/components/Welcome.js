@@ -115,7 +115,7 @@ const StyledWrapper = styled.section`
         font-size: .8rem;
         padding:.1rem .3rem;
       }
-      background: linear-gradient(145deg, #ca3d27, #ca0d00);
+      background: linear-gradient(145deg, #225741, #1C4D3A);
     }
     
   }
@@ -166,7 +166,7 @@ export default function Welcome() {
             <Confetti gravity={0.2} numberOfPieces={150} />
           </div>
           <div className="txt">
-            Chúng mình sắp cưới!
+            Bọn mình sắp cưới!
           </div>
         </div> : <a href="https://www.wjx.top/vj/QbEknqo.aspx" target="_blank" className="signup">Đăng ký</a>}
 

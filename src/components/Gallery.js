@@ -69,15 +69,15 @@ const StyledWrapper = styled.section`
         transition: all 0.6s ease-in-out;
         cursor: pointer;
         border: none;
-        font-size: 0.3rem;
-        padding: 0.08rem 0.3rem;
+        font-size: 0.18rem;
+        padding: 0.08rem 0.2rem;
         &:first-child {
-          padding-left: 0.6rem;
+          padding-left: 0.3rem;
           border-top-left-radius: 30px;
           border-bottom-left-radius: 30px;
         }
         &:last-child {
-          padding-right: 0.6rem;
+          padding-right: 0.3rem;
           border-top-right-radius: 30px;
           border-bottom-right-radius: 30px;
         }
@@ -100,8 +100,8 @@ console.log({ weddings })
 const GalleryInstance = ({ popupDan, cate = 'wedding', photos = [] }) => {
   const viewCount = useRef(0)
   const title = {
-    wedding: '羊二与聪聪的婚纱照',
-    dailys: '羊二与聪聪的日常'
+    wedding: 'Ảnh cưới TT',
+    dailys: 'Ảnh thường ngày TT'
   }
   const [reiniting, setReiniting] = useState(false)
   console.log({ photos })
@@ -115,7 +115,7 @@ const GalleryInstance = ({ popupDan, cate = 'wedding', photos = [] }) => {
   const handleLgClose = () => {
     console.log('lg close')
     if (viewCount.current >= 20) {
-      popupDan('超长回忆')
+      popupDan('Kỷ niệm dài')
     }
   }
   const handleLgOpen = () => {
@@ -131,7 +131,7 @@ const GalleryInstance = ({ popupDan, cate = 'wedding', photos = [] }) => {
     }
   }, [photos])
   return reiniting ? (
-    <Loading>初始化...</Loading>
+    <Loading>Đang tải...</Loading>
   ) : (
     <LightGallery
       onAfterClose={handleLgClose}
@@ -170,7 +170,7 @@ export default function Gallery({ popupDan }) {
   }
   return (
     <StyledWrapper>
-      <Title title="回忆·图库" />
+      <Title title="Thư viện kỷ niệm" />
       <div className="btns">
         <div className="group">
           <button
@@ -178,14 +178,14 @@ export default function Gallery({ popupDan }) {
             data-cate="wedding"
             onClick={handleCateClick}
           >
-            婚纱
+            Wedding
           </button>
           <button
             className={`btn ${cate == 'dailys' ? 'curr' : ''}`}
             data-cate="dailys"
             onClick={handleCateClick}
           >
-            日常
+            Daily
           </button>
         </div>
       </div>

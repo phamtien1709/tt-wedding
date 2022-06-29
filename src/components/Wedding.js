@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import Title from './SectionTitle'
-import WeddingImage from '../assets/imgs/wedding.png'
+import WeddingImage from '../assets/imgs/tt.wedding.jpg'
 import Map1Image from '../assets/imgs/map.xiaoqu.png'
 import Map2Image from '../assets/imgs/map.hotel.png'
 
@@ -58,6 +58,7 @@ position: relative;
               font-size: .3rem;
               width:100%;
               text-align: center;
+							font-family: Open Sans;
             border-bottom: 1px solid rgba(222,222,222,.4);
             padding-bottom: .2rem;
           }
@@ -76,6 +77,7 @@ position: relative;
                   .label{
                       color:#ccc;
                       white-space: nowrap;
+											font-family: Open Sans;
                       &:after{
                           content:"：";
                       }
@@ -83,6 +85,7 @@ position: relative;
                   .txt{
                     white-space: nowrap;
                     font-weight: 800;
+										font-family: Open Sans;
                       &.loc{
                           display: flex;
                           flex-direction: column;
@@ -122,12 +125,12 @@ export default function Wedding() {
                 <div className="box">
                     <h3 className="title">Nhà trai</h3>
                     <ul className="items">
-                        <li className="item"><span className="label">Thời gian</span><span className="txt">2022.07.17 10:00（sáng）</span></li>
+                        <li className="item"><span className="label">Thời gian</span><span className="txt">10:00 ngày 17/07/2022</span></li>
                         <li className="item">
                             <span className="label">Tại</span>
                             <div className="txt loc">
                                 <span>
-                                    TT Tiệc cưới Khoa Thanh, tiểu khu 4 Thị trấn Mai Châu.
+                                    Trung tâm Tiệc cưới Khoa Thanh,<br/> Tiểu khu 4, TT. Mai Châu
                                 </span>
                                 <a className="map" href={'https://j.map.baidu.com/ab/FGQJ'}>
                                     <img src={Map2Image} alt="map" />
@@ -139,12 +142,12 @@ export default function Wedding() {
                 <div className="box">
                     <h3 className="title">Nhà gái</h3>
                     <ul className="items">
-                        <li className="item"><span className="label">Thời gian</span><span className="txt">2021.09.15 11:00 - 14:00</span></li>
+                        <li className="item"><span className="label">Thời gian</span><span className="txt">09:00 ngày 09/07/2022</span></li>
                         <li className="item">
                             <span className="label">Tại</span>
                             <div className="txt loc">
                                 <span>
-                                    Thôn Thạch Đà, huyện Mê Linh, Thành phố Hà Nội
+                                    Thôn Tiên Đài, xã Vạn Yên,<br/> huyện Mê Linh, TP. Hà Nội
                                 </span>
                                 <a className="map" href={'https://j.map.baidu.com/19/OhRJ'}>
                                     <img src={Map1Image} alt="map" />

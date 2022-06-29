@@ -20,8 +20,8 @@ const StyledWrapper = styled.section`
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url('https://i.imgur.com/BSq7edmh.jpeg');
   background-repeat: no-repeat;
+	background-image: url('https://i.imgur.com/YgWliEM.jpeg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -29,6 +29,7 @@ const StyledWrapper = styled.section`
   justify-content: center;
   @media screen and (min-width: 769px) {
     background-attachment: fixed;
+		background-image: url('https://i.imgur.com/VY9mGDi.png');
   }
   .box {
     z-index: 99;

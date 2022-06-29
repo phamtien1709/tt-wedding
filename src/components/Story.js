@@ -39,12 +39,14 @@ const StyledWrapper = styled.section`
                 width: 4rem;
                 .title{
                     font-size: .3rem;
+										font-family: Dancing Script;
                 }
                 .date{
                     margin:.1rem 0;
                     font-style:oblique;
                     font-size: .12rem;
                     color:#666;
+										font-family: Open Sans;
                 }
                 .desc{
                     height: 1.5rem;
@@ -54,6 +56,7 @@ const StyledWrapper = styled.section`
                     font-size: .15rem;
                     display: flex;
                     flex-direction: column;
+										font-family: Open Sans;
                     span{
                         margin-bottom: .1rem;
                     }
@@ -99,46 +102,36 @@ const StyledWrapper = styled.section`
 `;
 const prefix = 'https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/story.';
 const items = [{
-    title: "相遇：幸运施了魔法~",
-    datetime: "2020.05.06",
-    desc: `<span>2020年4月底，我在豆瓣发现了她，第一次聊天即线下见面，所以称不上网恋。</span><span>那天我们聊了许久，感觉有说不完的话，不知不觉喝掉好几壶水呢~</span><span>虽然是首次接触，但就像认识了许久，这种熟悉又惊喜的感觉，使我们一点点向彼此靠近。</span>`,
+    title: "Beginning: Lần gặp đầu tiên ~",
+    datetime: "09/12/2020 - Bếp Nhà Mình",
+    desc: `<span>Một buổi tối mùa đông lạnh lẽo, cô ấy đang cảm thấy cô đơn, tình cờ tôi là người được biết đầu tiên.</span><span>Hôm đó chúng tôi đã nói chuyện rất lâu, cảm thấy có quá nhiều điều để nói, ăn uống suốt 3 tiếng đồng hồ ~</span><span>Dù đã biết nhau từ trước, nhưng đây là lần tán gẫu với nhau lâu đến thế. Sự thân quen và bỡ ngỡ này đã khiến chúng tôi xích lại gần nhau hơn từng chút một...</span>`,
     picture: `${prefix}first.jpg?x-oss-process=image/resize,w_300`,
 }, {
-    title: "相知：爱情中的模样~",
-    datetime: "2020.05.23",
-    desc: `<span>丘比特之箭射中了我们，空气都是甜甜的玉米味儿。</span>
-    <span>我们都爱大自然、且喜欢户外。</span>
-    <span>我们去永定河旁边的乡间小路探险，漫无目的地边走边玩，落日余晖下的她，真的好美。</span>
-    <span>我们一起爬好汉坡，蹭免费的植物园门票，欢呼雀跃的我们，像极了小孩子。</span>
-    <span>我们还挑战狗牙山10km穿越，有点冒险，很刺激，但她吓得不行，并严令禁止我再次挑战，她说：不想拿自己的生命冒险，当然也不想失去我。</span>
-    <span>我们喜欢看小说，喜欢从别人的故事中汲取人生智慧，甚至发表过一模一样的小说解读。</span>
-    <span>我们喜欢听歌疗愈，她听的歌大多痞痞的有点酷，我听得歌就是温柔偏大众了。</span>
-    <span>我们穿衣风格、消费习惯均高度相似，甚至脖子右侧有个一模一样的痣，上辈子的我们，可能是兄妹。</span>
-    <span>我们一起生活后，当然也免不了生活的摩擦。</span>
-    <span>我偏理性，她偏感性。</span>
-    <span>我是个慢性子，她是个急脾气。</span>
-    <span>我生气起来不爱说话，她生气起来爱飙狠话。</span>
-    <span>好在每次吵架我们都能冷静下来及时复盘，并学着去表达自己的感受，然后互相调整。</span>
-    <span>好的亲密关系是相处磨合出来的，我们愿意为了彼此去付出爱与精力，并时刻感恩。</span>`,
+    title: "Serious: Bước vào mối quan hệ nghiêm túc ~",
+    datetime: "08/03/2021 - @nguoiyeutoilacoder",
+    desc: `<span>Mũi tên của thần Cupid bắn trúng chúng tôi, và không khí có mùi như kiểu bánh đậu xanh :))).</span>
+    <span>Cả hai đều yêu thiên nhiên và thích ra ngoài đường ngắm đủ mọi thứ.</span>
+    <span>Hai đứa đi lòng vòng quanh Hồ Tây, Hồ Hoàn Kiếm,.. nhiều lúc chẳng vì lý do gì cả. Chỉ là đi với nhau là được.</span>
+    <span>Hai đứa cũng đi Tam Đảo, như bao người khác. Thích cái không khí se lạnh, hai bàn tay đan siết vào nhau. Một vài cái ôm nồng ấm cũng giúp xóa đi cái lạnh của tiết trời.</span>
+    <span>Hai đứa thích nghe nhạc, hầu hết albums Spotify cô ấy thích, đều nằm trong Mục Yêu Thích của tôi. Hát vu vơ cùng nhau, ê a những bài hát quên lời.</span>
+    <span>Cùng nhau chia sẻ mọi thứ, từ công việc đến đời sống, các mối quan hệ cũng như cách phát triển bản thân. Đồng hành, cùng tìm cho nhau một lối đi chung.</span>
+    <span>Đứa con tinh thần đầu tiên được sinh ra và được nhiều người biết đến. Tiktok "<a href="https://www.tiktok.com/@nguoiyeutoilacoder">Người yêu tôi là Coder</a>" tính đến nay đã có 23 triệu views, 13.200 Followers và 168.000 lượt thích. Một niềm tự hào, kết quả dành cho sự cố gắng của hai đứa.</span>
+    <span>Tôi lý trí, cô ấy tình cảm.</span>
+    <span>Tôi là một người thù dai, cô ấy là một người hay quên.</span>
+    <span>Tôi thích nói một cách gay gắt khi tức giận, và cô ấy không thích nói khi cô ấy tức giận.</span>
+    <span>Một mối quan hệ tốt đẹp là kết quả của sự hòa hợp, chúng tôi sẵn sàng dành tình yêu và năng lượng cho nhau, và luôn cảm thấy biết ơn vì đã có nhau!</span>`,
     picture: `${prefix}bws.png?x-oss-process=image/resize,w_300`,
 }, {
-    title: "相守：心安即是归处",
-    datetime: "2020.06.06",
-    desc: `<span>不管是租房，还是买房，只要心有所属，哪里就是家。</span>
-    <span>我们一起生活后，迫切的需要有自己的小家，自己的厨房</span>
-    <span>但问题是老家已有一个买来的住所，何不离京呢？</span>
-    <span>北京适合生存，不适合生活。</span>
-    <span>两人一拍即合，锅碗瓢盆打包一车搞定，吃完最后一顿火锅唱着歌，一路小跑就离京了。</span>
-    <span>我们的小家于5月份开始硬装，7月初着手软装。</span>
-    <span>从家徒四壁，到找装修公司，多次确认设计方案，然后灯具，家具，家电依次入场...</span>
-    <span>看到小家一点点变成我们想要的样子，真是发自内心的快乐。</span>
-    <span>对于这种突如其来的个人空间，我们沉浸在极大的新鲜感与兴奋感里，无法自拔。</span>
-    <span>我经常各个房间晃来晃去，她经常拿着盒尺量来量去，然后不约而同的相视，咯咯傻笑。</span>
-
-    <span>2021年8月23日，我们领证了！</span>
-    <span>只有那5分钟的紧张激动，很快就恢复平静。</span>
-    <span>可能在我心里，我们早就结婚了，这已然成为我们的日常生活。</span>
-    <span>我们以后将更珍惜彼此，小心呵护这份难得的感情~ 有福同享、有难同当，齐心协力、共同为我们的美好未来努力！</span>`,
+    title: "Together: Về chung một nhà ~",
+    datetime: "03.03.2022",
+    desc: `<span>Dù là thuê nhà hay mua nhà, chỉ cần trái tim bạn thuộc về, thì nhà luôn là nơi để về.</span>
+    <span>Sau khi chung sống, chúng tôi đã có một tổ ấm của riêng mình và một căn bếp nhỏ. Hàng ngày nấu những bữa ăn ngon và cùng nhau thưởng thức.</span>
+    <span>Tự tay sắm những món đồ, từ những thứ nhỏ nhất,. đến những thứ "to hơn một chút" mà trước đó chưa có ai trong hai đứa có thể nghĩ đến.</span>
+		<span>Đó là một niềm vui từ tận đáy lòng của tôi khi thấy một căn hộ nhỏ trở thành những gì chúng tôi muốn.</span>
+    <span>Sau khi chung sống, tất nhiên những xích mích trong cuộc sống là điều không thể tránh khỏi.</span>
+    <span>May mắn thay, mỗi khi cãi vã, chúng tôi có thể bình tĩnh và xem xét lại kịp thời, đồng thời học cách bày tỏ cảm xúc của mình, từ đó điều chỉnh cho phù hợp với nhau.</span>
+    <span>Có lẽ trong thâm tâm tôi, chúng tôi đã kết hôn từ lâu, và đây đã trở thành cuộc sống hàng ngày của chúng tôi.</span>
+    <span>Chúng tôi sẽ trân trọng nhau hơn nữa trong tương lai và chăm sóc cho mối quan hệ này ~ Chúng tôi sẽ chia sẻ tất cả những niềm vui và những khó khăn, cùng nhau cố gắng vì tương lai tươi sáng của chúng tôi!</span>`,
     picture: `${prefix}banjia.jpg?x-oss-process=image/resize,w_300`,
 }]
 function createMarkup(html) {
