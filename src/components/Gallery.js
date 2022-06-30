@@ -93,6 +93,36 @@ const StyledWrapper = styled.section`
 const weddings = Array.from(Array(29).keys())
   .map((v, idx) => `w${idx + 1}`)
   .filter((p) => !['w2', 'w6', 'w7', 'w13', 'w26', 'w21', 'w10'].includes(p))
+const WEDDINGS = [
+  'https://i.imgur.com/s0hVJTC.jpeg',
+  'https://i.imgur.com/TLb10ya.jpeg',
+  'https://i.imgur.com/DKDUvTE.jpeg',
+  'https://i.imgur.com/U3U6SzN.jpeg',
+  'https://i.imgur.com/YgWliEM.jpeg',
+  'https://i.imgur.com/RwF093i.jpeg',
+  'https://i.imgur.com/GYJF0rB.jpeg',
+  'https://i.imgur.com/Pp8o9qs.jpeg',
+  'https://i.imgur.com/c9WQPdh.jpeg',
+  'https://i.imgur.com/iYzAcmm.jpeg',
+  'https://i.imgur.com/js94fRD.jpeg',
+  'https://i.imgur.com/kQunw7I.jpeg',
+  'https://i.imgur.com/vEHZG8d.jpeg',
+  'https://i.imgur.com/mcdijlh.jpeg',
+  'https://i.imgur.com/vzGrlkC.jpeg',
+  'https://i.imgur.com/8Gyrzcl.jpeg',
+  'https://i.imgur.com/ZJckVqU.jpeg',
+  'https://i.imgur.com/oGTckhT.jpeg',
+  'https://i.imgur.com/5mqrN4K.jpeg',
+  'https://i.imgur.com/2FNpeqC.jpeg',
+  'https://i.imgur.com/a4qk8SC.jpeg',
+  'https://i.imgur.com/di5OjYt.jpeg',
+  'https://i.imgur.com/PAD5BhI.jpeg',
+  'https://i.imgur.com/EEBUVgY.jpeg',
+  'https://i.imgur.com/q69am7t.jpeg',
+  'https://i.imgur.com/59qNmby.jpeg',
+  'https://i.imgur.com/h51Pyjt.jpeg',
+  'https://i.imgur.com/JELhYsp.jpeg'
+]
 const dailys = Array.from(Array(37).keys())
   .map((v, idx) => `d${idx + 1}`)
   .filter((p) => !['d7', 'd12', 'd15', 'd20', 'd21'].includes(p))
@@ -148,10 +178,18 @@ const GalleryInstance = ({ popupDan, cate = 'wedding', photos = [] }) => {
             key={photo}
             className="picture"
             data-sub-html={`<h4>${title[cate]}</h4>`}
-            data-src={`https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/${photo}.png?x-oss-process=image/resize,w_1200`}
+            data-src={
+              photo.includes('https://')
+                ? photo
+                : `https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/${photo}.png?x-oss-process=image/resize,w_1200`
+            }
           >
             <img
-              src={`https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/${photo}.png?x-oss-process=image/resize,w_300`}
+              src={
+                photo.includes('https://')
+                  ? photo.replace('.jpeg', 'l.jpeg')
+                  : `https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/${photo}.png?x-oss-process=image/resize,w_300`
+              }
             />
           </div>
         )
@@ -161,12 +199,12 @@ const GalleryInstance = ({ popupDan, cate = 'wedding', photos = [] }) => {
 }
 export default function Gallery({ popupDan }) {
   const [cate, setCate] = useState('wedding')
-  const [photos, setPhotos] = useState(weddings)
+  const [photos, setPhotos] = useState(WEDDINGS)
 
   const handleCateClick = (evt) => {
     const { cate } = evt.target.dataset
     setCate(cate)
-    setPhotos(cate == 'wedding' ? weddings : dailys)
+    setPhotos(cate == 'wedding' ? WEDDINGS : dailys)
   }
   return (
     <StyledWrapper>
