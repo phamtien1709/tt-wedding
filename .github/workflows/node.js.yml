@@ -24,5 +24,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - run: git reset --hard origin/master
+    - run: yarn
     - run: yarn build
     - run: pm2 restart tt-wedding
