@@ -15,6 +15,7 @@ const Loading = styled.div`
   font-size: 0.24rem;
   padding: 0.4rem 0.2rem;
   text-align: center;
+	font-family: Open Sans;
 `
 const StyledWrapper = styled.section`
   min-height: 50vh;
@@ -89,15 +90,12 @@ const StyledWrapper = styled.section`
     }
   }
 `
-
-const weddings = Array.from(Array(29).keys())
-  .map((v, idx) => `w${idx + 1}`)
-  .filter((p) => !['w2', 'w6', 'w7', 'w13', 'w26', 'w21', 'w10'].includes(p))
 const WEDDINGS = [
   'https://i.imgur.com/s0hVJTC.jpeg',
   'https://i.imgur.com/TLb10ya.jpeg',
   'https://i.imgur.com/DKDUvTE.jpeg',
   'https://i.imgur.com/U3U6SzN.jpeg',
+  'https://i.imgur.com/JpFPH23.jpeg',
   'https://i.imgur.com/YgWliEM.jpeg',
   'https://i.imgur.com/RwF093i.jpeg',
   'https://i.imgur.com/GYJF0rB.jpeg',
@@ -107,26 +105,63 @@ const WEDDINGS = [
   'https://i.imgur.com/js94fRD.jpeg',
   'https://i.imgur.com/kQunw7I.jpeg',
   'https://i.imgur.com/vEHZG8d.jpeg',
-  'https://i.imgur.com/mcdijlh.jpeg',
   'https://i.imgur.com/vzGrlkC.jpeg',
-  'https://i.imgur.com/8Gyrzcl.jpeg',
+  'https://i.imgur.com/GuL5bSO.jpeg',
+  'https://i.imgur.com/di5OjYt.jpeg',
   'https://i.imgur.com/ZJckVqU.jpeg',
   'https://i.imgur.com/oGTckhT.jpeg',
   'https://i.imgur.com/5mqrN4K.jpeg',
   'https://i.imgur.com/2FNpeqC.jpeg',
+  'https://i.imgur.com/8Gyrzcl.jpeg',
+  'https://i.imgur.com/mcdijlh.jpeg',
   'https://i.imgur.com/a4qk8SC.jpeg',
-  'https://i.imgur.com/di5OjYt.jpeg',
   'https://i.imgur.com/PAD5BhI.jpeg',
   'https://i.imgur.com/EEBUVgY.jpeg',
   'https://i.imgur.com/q69am7t.jpeg',
   'https://i.imgur.com/59qNmby.jpeg',
   'https://i.imgur.com/h51Pyjt.jpeg',
-  'https://i.imgur.com/JELhYsp.jpeg'
+  'https://i.imgur.com/JELhYsp.jpeg',
+  'https://i.imgur.com/5wMe6kj.jpeg'
 ]
-const dailys = Array.from(Array(37).keys())
-  .map((v, idx) => `d${idx + 1}`)
-  .filter((p) => !['d7', 'd12', 'd15', 'd20', 'd21'].includes(p))
-console.log({ weddings })
+const DAILIES = [
+  'https://i.imgur.com/jzDkr8L.jpeg',
+  'https://i.imgur.com/lvyLwtv.jpeg',
+  'https://i.imgur.com/RjmPYbE.jpeg',
+  'https://i.imgur.com/94l9v2y.jpeg',
+  'https://i.imgur.com/7JhiwXn.jpeg',
+  'https://i.imgur.com/ECwEMZH.jpeg',
+	'https://i.imgur.com/JdSvP07.jpeg',
+	'https://i.imgur.com/gwnma8F.png',
+	'https://i.imgur.com/sIUJ2Ct.jpeg',
+	'https://i.imgur.com/EBtRoeG.jpeg',
+	'https://i.imgur.com/t4VJW0m.jpeg',
+	'https://i.imgur.com/cyNdG3P.jpeg',
+	'https://i.imgur.com/YtbB875.jpeg',
+	'https://i.imgur.com/zGm4xUN.jpeg',
+	'https://i.imgur.com/3Pcke9f.jpeg',
+	'https://i.imgur.com/WOg4nSA.png',
+	'https://i.imgur.com/dGxfqyt.jpeg',
+	'https://i.imgur.com/lAnEXTT.jpeg',
+	'https://i.imgur.com/s4OC6bs.jpeg',
+	'https://i.imgur.com/laT30tp.jpeg',
+	'https://i.imgur.com/YH4dF0b.jpeg',
+	'https://i.imgur.com/sFhMDjN.jpeg',
+	'https://i.imgur.com/kKscIRm.jpeg',
+	'https://i.imgur.com/xERbIFj.jpeg',
+	'https://i.imgur.com/DwaAQRp.jpeg',
+	'https://i.imgur.com/5f13NpO.png',
+	'https://i.imgur.com/rrWTiEA.png',
+	'https://i.imgur.com/Az1uM8t.png',
+	'https://i.imgur.com/gMyZsYI.png',
+	'https://i.imgur.com/J5sMWnd.jpeg',
+	'https://i.imgur.com/IY8KyOF.png',
+	'https://i.imgur.com/qjAXnXM.png',
+	'https://i.imgur.com/hUu0R9q.jpeg',
+	'https://i.imgur.com/Jbx1BLZ.jpeg',
+	'https://i.imgur.com/el2814j.png',
+	'https://i.imgur.com/IKcaXRZ.png',	
+]
+
 const GalleryInstance = ({ popupDan, cate = 'wedding', photos = [] }) => {
   const viewCount = useRef(0)
   const title = {
@@ -204,7 +239,7 @@ export default function Gallery({ popupDan }) {
   const handleCateClick = (evt) => {
     const { cate } = evt.target.dataset
     setCate(cate)
-    setPhotos(cate == 'wedding' ? WEDDINGS : dailys)
+    setPhotos(cate == 'wedding' ? WEDDINGS : DAILIES)
   }
   return (
     <StyledWrapper>

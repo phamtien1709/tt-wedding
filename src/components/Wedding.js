@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import Title from './SectionTitle'
 import WeddingImage from '../assets/imgs/tt.wedding.jpg'
-import Map1Image from '../assets/imgs/map.xiaoqu.png'
-import Map2Image from '../assets/imgs/map.hotel.png'
+import Map1Image from '../assets/imgs/mapgirl.png'
+import Map2Image from '../assets/imgs/mapboy.png'
 
 const StyledWrapper = styled.section`
   z-index: 1;
@@ -138,7 +138,7 @@ export default function Wedding() {
                   Trung tâm Tiệc cưới Khoa Thanh,
                   <br /> Tiểu khu 4, TT. Mai Châu
                 </span>
-                <a className="map" href={'https://j.map.baidu.com/ab/FGQJ'}>
+                <a className="map" href={'https://goo.gl/maps/ku1sE1uf9JWpPiS46'}>
                   <img src={Map2Image} alt="map" />
                 </a>
               </div>
@@ -159,7 +159,7 @@ export default function Wedding() {
                   Thôn Tiên Đài, xã Vạn Yên,
                   <br /> huyện Mê Linh, TP. Hà Nội
                 </span>
-                <a className="map" href={'https://j.map.baidu.com/19/OhRJ'}>
+                <a className="map" href={'https://goo.gl/maps/opaKgw9VZasBqDP28'}>
                   <img src={Map1Image} alt="map" />
                 </a>
               </div>

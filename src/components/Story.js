@@ -1,6 +1,12 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components';
+
+import step1 from '../assets/imgs/step1.png'
+import step2 from '../assets/imgs/step2.jpg'
+import step3 from '../assets/imgs/step3.jpeg'
 import Title from './SectionTitle'
+
+
 const AniBeating = keyframes`
     from{
         opacity:.1;
@@ -100,12 +106,11 @@ const StyledWrapper = styled.section`
     }
   }
 `;
-const prefix = 'https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/story.';
 const items = [{
     title: "Beginning: Lần gặp đầu tiên ~",
     datetime: "09/12/2020 - Bếp Nhà Mình",
     desc: `<span>Một buổi tối mùa đông lạnh lẽo, cô ấy đang cảm thấy cô đơn, tình cờ tôi là người được biết đầu tiên.</span><span>Hôm đó chúng tôi đã nói chuyện rất lâu, cảm thấy có quá nhiều điều để nói, ăn uống suốt 3 tiếng đồng hồ ~</span><span>Dù đã biết nhau từ trước, nhưng đây là lần tán gẫu với nhau lâu đến thế. Sự thân quen và bỡ ngỡ này đã khiến chúng tôi xích lại gần nhau hơn từng chút một...</span>`,
-    picture: `${prefix}first.jpg?x-oss-process=image/resize,w_300`,
+    picture: step1,
 }, {
     title: "Serious: Bước vào mối quan hệ nghiêm túc ~",
     datetime: "08/03/2021 - @nguoiyeutoilacoder",
@@ -120,7 +125,7 @@ const items = [{
     <span>Tôi là một người thù dai, cô ấy là một người hay quên.</span>
     <span>Tôi thích nói một cách gay gắt khi tức giận, và cô ấy không thích nói khi cô ấy tức giận.</span>
     <span>Một mối quan hệ tốt đẹp là kết quả của sự hòa hợp, chúng tôi sẵn sàng dành tình yêu và năng lượng cho nhau, và luôn cảm thấy biết ơn vì đã có nhau!</span>`,
-    picture: `${prefix}bws.png?x-oss-process=image/resize,w_300`,
+    picture: step2,
 }, {
     title: "Together: Về chung một nhà ~",
     datetime: "03.03.2022",
@@ -132,7 +137,7 @@ const items = [{
     <span>May mắn thay, mỗi khi cãi vã, chúng tôi có thể bình tĩnh và xem xét lại kịp thời, đồng thời học cách bày tỏ cảm xúc của mình, từ đó điều chỉnh cho phù hợp với nhau.</span>
     <span>Có lẽ trong thâm tâm tôi, chúng tôi đã kết hôn từ lâu, và đây đã trở thành cuộc sống hàng ngày của chúng tôi.</span>
     <span>Chúng tôi sẽ trân trọng nhau hơn nữa trong tương lai và chăm sóc cho mối quan hệ này ~ Chúng tôi sẽ chia sẻ tất cả những niềm vui và những khó khăn, cùng nhau cố gắng vì tương lai tươi sáng của chúng tôi!</span>`,
-    picture: `${prefix}banjia.jpg?x-oss-process=image/resize,w_300`,
+    picture: step3,
 }]
 function createMarkup(html) {
     return { __html: html };
