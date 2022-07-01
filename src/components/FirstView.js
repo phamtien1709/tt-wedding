@@ -53,7 +53,7 @@ const StyledWrapper = styled.section`
     .title {
       font-family: 'Dancing Script', cursive;
       display: flex;
-      font-size: 0.48rem;
+      font-size: 0.43rem;
       padding: 0.2rem 0;
       margin-bottom: 0.2rem;
       span {
@@ -115,10 +115,10 @@ export default function FirstView() {
     // elRef refers to the <span> rendered below
     typed.current = new Typed(el.current, {
       strings: [
-        'Bọn mình<strong> sắp </strong>',
-        'Bọn mình<strong> sắp </strong>',
-        'Bọn mình<strong> sắp </strong>',
-        'Bọn mình<strong> sắp </strong>cưới!'
+        'Chúng mình<strong> sắp </strong>',
+        'Chúng mình<strong> sắp </strong>',
+        'Chúng mình<strong> sắp </strong>',
+        'Chúng mình<strong> sắp </strong>cưới!'
       ],
       typeSpeed: 200,
       backSpeed: 50,
