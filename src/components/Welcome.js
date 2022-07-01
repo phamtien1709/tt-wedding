@@ -166,7 +166,7 @@ export default function Welcome() {
             <Confetti gravity={0.2} numberOfPieces={150} />
           </div>
           <div className="txt">
-            Bọn mình sắp cưới!
+            Chúng mình sắp cưới!
           </div>
         </div> : <a href="https://www.wjx.top/vj/QbEknqo.aspx" target="_blank" className="signup">Đăng ký</a>}
 
