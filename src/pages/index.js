@@ -35,7 +35,7 @@ export default function Index({ data }) {
         <meta name="description" content={siteDescription} />
         <meta
           property="og:image"
-          content="http://www.coachesneedsocial.com/wp-content/uploads/2014/12/BannerWCircleImages-1.jpg"
+          content="https://i.imgur.com/VY9mGDi.png"
         />
         <meta property="og:description" content={siteDescription} />
         <meta
