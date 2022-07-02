@@ -33,6 +33,16 @@ export default function Index({ data }) {
       <Helmet>
         <title>{siteTitle}</title>
         <meta name="description" content={siteDescription} />
+        <meta
+          property="og:image"
+          content="http://www.coachesneedsocial.com/wp-content/uploads/2014/12/BannerWCircleImages-1.jpg"
+        />
+        <meta property="og:description" content={siteDescription} />
+        <meta
+          property="og:url"
+          content="http://wedding.bepcothanh.com"
+        />
+        <meta property="og:title" content="TT Wedding" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
