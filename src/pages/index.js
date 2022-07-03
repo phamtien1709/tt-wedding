@@ -32,7 +32,7 @@ export default function Index({ data }) {
     <div>
       <Helmet>
         <meta name="description" content={siteDescription} />
-        <meta property="og:image" content="https://i.imgur.com/VY9mGDih.png" />
+        <meta property="og:image" content="https://i.imgur.com/VY9mGDi.png" />
         <meta property="og:description" content={siteDescription} />
         <meta property="og:url" content="http://wedding.bepcothanh.com" />
         <meta property="og:title" content="TT - Wedding" />
