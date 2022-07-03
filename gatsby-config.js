@@ -39,6 +39,16 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: 'GTM-WRLFW3J',
+        includeInDevelopment: false,
+        // Defaults to null
+        defaultDataLayer: { platform: 'gatsby' },
+				enableWebVitalsTracking: true,
+      }
+    },
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     `gatsby-plugin-styled-components`
