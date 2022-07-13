@@ -91,7 +91,7 @@ const StyledWrapper = styled.section`
   }
 `
 const now = new Date().getTime()
-const deadline = new Date(1657299600000).getTime()
+const deadline = new Date(1658050200000).getTime()
 const initCountNum = deadline - now
 
 export default function FirstView() {
@@ -172,7 +172,7 @@ export default function FirstView() {
               </span>
             </Timer>
           </div>
-          <div className="time">09 Tháng 07 Năm 2022</div>
+          <div className="time">17 Tháng 07 Năm 2022</div>
         </div>
       </div>
       <HiChevronDoubleDown className="down" />
