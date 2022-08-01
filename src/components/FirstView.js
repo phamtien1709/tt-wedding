@@ -92,7 +92,7 @@ const StyledWrapper = styled.section`
 `
 const now = new Date().getTime()
 const deadline = new Date(1658050200000).getTime()
-const initCountNum = deadline - now
+const initCountNum = (deadline - now) < 0 ? 0 : (deadline - now) 
 
 export default function FirstView() {
   const [direction, setDirection] = useState(
