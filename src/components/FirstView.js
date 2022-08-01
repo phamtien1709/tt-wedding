@@ -164,6 +164,7 @@ export default function FirstView() {
               ]}
               initialTime={initCountNum}
               direction={direction}
+	      startImmediately={initCountNum !== 0}
               formatValue={(value) => `${value < 10 ? `0${value}` : value}`}
             >
               <span className="num day">
