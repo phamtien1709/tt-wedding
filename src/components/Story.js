@@ -2,7 +2,7 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components';
 
 import step1 from '../assets/imgs/step1.png'
-import step2 from '../assets/imgs/step2.2.jpg'
+import step2 from '../assets/imgs/step2.jpg'
 import step3 from '../assets/imgs/step3.jpeg'
 import Title from './SectionTitle'
 
